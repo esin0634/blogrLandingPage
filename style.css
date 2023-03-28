@@ -1,3 +1,9 @@
+*{
+  font-family: 'Overpass', sans-serif;
+}
+h1{
+  font-family: 'Ubuntu', sans-serif;
+}
 body{
   margin: 0;
   padding: 0;
@@ -24,7 +30,7 @@ body{
     height: 3rem;
 }
 
-.color {
+.border-curve {
     border-bottom-left-radius: 100px; 
     
 }
@@ -32,12 +38,10 @@ body{
 header {
     position: relative;
     
-    /* height: 400px; Set the height of your header */
     background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg,rgb(240,139,116),rgb(255, 0, 55));
     background-repeat: no-repeat;
     background-size: 190%;
-    background-position: 20% 52%; /* Center the image */
-    /* background-color: linear-gradient(90deg,rgb(240,139,116),rgb(235,85,93)); */
+    background-position: 20% 52%; 
         
   }
 
@@ -76,9 +80,8 @@ header {
 }
 
 .main-3-img{
-  position: absolute;
-  left: -300px;;
-  top: 120rem;
+  position: relative;
+  left: -20rem;
 }
 
 .main-3-row-1{
@@ -87,4 +90,15 @@ header {
 
 .main-3-row-2{
   margin-top: 5rem;
+}
+.footer-border-raidus{
+  border-top-right-radius: 100px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+a{
+  text-decoration: none;
 }
