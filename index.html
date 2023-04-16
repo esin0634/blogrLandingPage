@@ -6,6 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,29 +20,31 @@
   </style>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Blogr</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="py-5 px-10 border border-curve text-white border border-primary">
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container ">
+        <div class="mx-4">
+        <h1 class="h1 fw-bold ">Blogr</h1>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Product
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu text-white">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Company
               </a>
               <ul class="dropdown-menu">
@@ -48,7 +55,7 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Connect
               </a>
               <ul class="dropdown-menu">
@@ -59,117 +66,179 @@
               </ul>
             </li>
           </ul>
-            <button class="btn btn-light" type="submit">Login</button>
-            <button class="btn btn-dark" type="submit">Signup</button>
+          <form class="d-flex" role="search">
+            <button class="btn btn-transparent rounded-pill" type="submit">Login</button>
+            <button class="btn btn-md btn-outline-success rounded-pill" type="submit">Sign Up</button>
           </form>
         </div>
       </div>
     </nav>
-    
-    <div>
-      <h1> A modern publishing platform</h1>
-      <h4> Grow your audience and build your online brand</h3>
-      <button class="btn btn-light" type="submit">Start for Free</button>
-      <button class="btn btn-dark" type="submit">Learn More</button>
-
+    <div class="container d-flex justify-content-center text-center my-5">
+        <div class="row">
+            <div class="col">
+                <p class="display-2 my-4">A modern publishing platform</p>
+                <p>Grow you audience and buil your online brand</p>
+            <div class="col d-flex justify-content-center my-5">
+                <button class="btn btn-md btn-outline-success rounded-pill mx-3" id="learn-more-border "type="submit">Start for free</button>
+                <button class="btn btn-md btn-outline rounded-pill" type="submit">Learn more</button>
+            </div>
+            </div>
+        </div>
     </div>
 
   </header>
-
   <main>
-    <div class="container text-center">
-      <div class="row align-items-start">
+    <div class="container main main-1">
+      <div class="row">
         <div class="col">
-          One of three columns
+          <h1 class="text-center">Designed for the future</h1>
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col-12 ">
+              <h3 class="mt-5">Introducing and extensible editor</h3>
+              <p class="mt-5">
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="col-12 ">
+              <h3 class="mt-5">Robust content management</h3>
+              <p class="mt-5">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+            </div>
+          </div>
         </div>
-        <div class="col">
-          One of three columns
+        <div class="col ">
+          <img class="main-1-img" src="images/illustration-editor-desktop.svg" alt="">
         </div>
-        <div class="col">
-          One of three columns
+
+      </div>
         </div>
       </div>
     </div>
 
-    <div class="container text-center">
-      <h2>Designed for the future</h2>
-        <div class="left-side">
-          <h3>Introducing and extensible editor</h3>
-          <p>
-            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-            change the looks of a blog.
+    <div class="container-fluid main main-2">
+      <div class="row">
+        <div class="col">
+          <img class="main-2-img" src="images/illustration-phones.svg" alt="">
+        </div>
+        <div class="col main-2-col-2 ">
+          <h3>State of the Art Infrastructure</h3>
+          <p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid main main-3">
+      <div class="row ">
+        <div class="col-6">
+          <img class="main-3-img" src="images/illustration-laptop-desktop.svg" alt="">
+        </div>
+        <div class="col-md-6">
+        <div class="row main-3-row-1">
+          <h3>Free,open,simple</h3>
+          <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
-          <h3>Robust content management</h3>
-          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
         </div>
-        <div class="image">
-          <img src="images/illustration-editor-mobile.svg" alt="">
+        <div class="row main-3-row-2">
+          <h3>Poweful tooling</h3>
+          <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+          </p>
         </div>
-    </div>
-    <div class="2">
-      <div class="image">
-        <img src="images/illustration-phones.svg" alt="">
       </div>
-
-      <div class="right-side">
-        <h3>State of the Art Infrastructure</h3>
-        <p>dfslşknlksjbglkjb</p>
+      </div>
       </div>
     </div>
-
-    <div class="2">
-      <div class="image">
-        <img src="images/illustration-laptop-mobile.svg" alt="">
-      </div>
-
-      <div class="right-side">
-        <h3>Free,open,simple</h3>
-        <p>dfslşknlksjbglkjb</p>
-        <h3>Poweful tooling</h3>
-        <p>dfslşknlksjbglkjb</p>
-      </div>
-    </div>
-
-
   </main>
 
-  <footer>
-    <div class="logo"> Blogr</div>
-    <div>
-      <ul>
-        <li>Product</li>
-        <li>Overview</li>
-        <li>Pricing</li>
-        <li>Marketplace</li>
-        <li>Features</li>
-        <li>Integrations</li>
-      </ul>
-    </div>
-    <div>    
-      <ul>
-        <li>Company</li>
-        <li>About</li>
-        <li>Team</li>
-        <li>Blog</li>
-        <li>Careers</li>
-      </ul>
-    </div>
-    <div>
-      <li>Connect</li>
-      <li>Contact</li>
-      <li>Newsletter</li>
-      <li>LinkedIn</li>
-    </div>
+  <footer class="text-center text-lg-start bg-light text-muted ">
+  
+    <!-- Section: Links  -->
+    <section class="footer-border-raidus bg-dark text-white">
+      <div class="container text-center text-md-start mt-5 p-3">
+        <!-- Grid row -->
+        <div class="row my-5">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h1 class="mb-4">
+              <i class="fas fa-gem me-3 "></i>Blogr
+            </h1>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+            <!-- Links -->
+            <h6 class="fw-bold mb-5">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Overview</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Marketplace</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Features</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Integration</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="fw-bold mb-5">
+              Company
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">About</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Team</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Blog</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Careers</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class=" fw-bold mb-5">Connect</h6>
+            <p><i class=""></i>Contact</p>
+            <p>
+              <i class=""></i>
+              Newsletter
+            </p>
+            <p><i class=""></i>Linked</p>
+
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
   </footer>
-
- 
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- Footer -->
 </body>
 </html>

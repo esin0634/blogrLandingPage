@@ -1,0 +1,104 @@
+*{
+  font-family: 'Overpass', sans-serif;
+}
+h1{
+  font-family: 'Ubuntu', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.btn-transparent {
+    color: #fff;
+    border: #fff;
+
+    
+}
+
+.btn-outline{
+    color: #fff;
+    border-color: #fff;
+    width: 8rem;
+    height: 3rem;
+}
+
+.btn-outline-success{
+    color:palevioletred;
+    background-color: #fff;
+    border: #fff;
+    width: 8rem;
+    height: 3rem;
+}
+
+.border-curve {
+    border-bottom-left-radius: 100px; 
+    
+}
+
+header {
+    position: relative;
+    
+    background: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(90deg,rgb(240,139,116),rgb(255, 0, 55));
+    background-repeat: no-repeat;
+    background-size: 190%;
+    background-position: 20% 52%; 
+        
+  }
+
+  
+.main{
+  margin-top: 10rem;
+}
+
+.main-1-img{
+  position: absolute;
+  width: 55rem;
+  right: -300px;
+  top: 40rem;
+}
+
+.main-2-img{
+  position: absolute;
+  left: 10rem;
+  top: 85rem;
+  
+}
+
+.main-2{
+  background-color: #393A58;
+  /* height: 30rem; */
+  width: 100%;
+  border-radius: 0 7rem 0 7rem;
+}
+  
+
+.main-2-col-2{
+  height: 25rem;
+  width: 100%;
+  padding-top: 8rem;
+  color: #fff;
+}
+
+.main-3-img{
+  position: relative;
+  left: -20rem;
+}
+
+.main-3-row-1{
+  margin-top: 8rem;
+}
+
+.main-3-row-2{
+  margin-top: 5rem;
+}
+.footer-border-raidus{
+  border-top-right-radius: 100px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+a{
+  text-decoration: none;
+}
